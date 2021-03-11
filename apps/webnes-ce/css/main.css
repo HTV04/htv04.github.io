@@ -1,0 +1,307 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 14pt;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #505050;
+}
+
+a:hover {
+  color: #c70005;
+}
+
+#desktopLanding {
+  text-align: center;
+  height: 100%;
+  display: none;
+  position: relative;
+}
+
+#desktopLanding #webNESLogo {
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#desktopLanding #webNESLogo {
+  opacity: 0.8; 
+}
+
+#desktopLanding #noDesktop {
+  margin-left: 10px;
+  margin-top: 15px;
+  opacity: 0.8;
+}
+
+#desktopLanding p {
+  color: #c70005;
+  margin: 0px;
+}
+
+#play {
+  text-align: center;
+  height: 100%;
+  display: none;
+  position: relative;
+  overflow:hidden;
+}
+
+#play img {
+    position: fixed;
+    -webkit-touch-callout:none;
+    touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+canvas#screen {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 55%;
+  max-width: 800px; 
+  -webkit-box-shadow: 0px 0px 8px 2px #111;
+       -moz-box-shadow: 0px 0px 8px 2px #111;
+            box-shadow: 0px 0px 8px 2px #111;
+
+}
+
+div#portrait_controls {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: -webkit-calc(100% - 300px);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+
+div#buttons {
+  height: inherit;
+   
+
+}
+
+div#home {
+  z-index: 1000;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#header{
+    width: inherit;
+    float: left;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: 3px solid #d3d3d3;
+    background-color: #ffffff;
+}
+
+#header img{
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#addROM{
+    float: right;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+#addROM img{
+    height: 25px;
+    width: 25px;   
+}
+
+#scroll {
+    width: 100%;
+    height: 480px;
+    float: left;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+#scroll ul {
+  padding-left: 20px;
+  margin: 0px;
+}
+
+#scroll li {
+    display: block;
+    position: relative;
+    list-style-type: none;
+    text-align: left;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #d3d3d3;
+    -webkit-user-select: none;
+}
+
+#footer {
+    text-align: center;
+}
+
+#play img:active {
+  opacity: .6;
+}
+
+img#portrait_up {
+  top: 64%;
+  left: 16%;
+}
+
+img#portrait_right {
+  top: 76%;
+  left: 27%;
+}
+
+
+img#portrait_down {
+  top: 84.5%;
+  left: 16%;
+}
+
+
+img#portrait_left {
+  top: 76%;
+  left: 1%;
+}
+
+
+img#portrait_select {
+  top: 90%;
+  left: 53%;
+}
+
+
+img#portrait_start {
+  top: 90%;
+  left: 77%;
+}
+
+img#portrait_B {
+  top: 69%;
+  left: 52.5%;
+}
+
+img#portrait_A {
+  top: 66%;    
+  left: 77%;
+} 
+
+@media screen and (orientation:landscape) {
+  img {
+    opacity: .6;
+  }
+
+  img:active {
+    opacity: 1;
+  }
+
+  img#portrait_up {
+    touch-action: none;
+    height: 15%;
+    top: 57%;
+  }
+
+  img#portrait_right {
+    touch-action: none;
+    width: 15.5%;
+    height: 15%;
+    left: 28%;
+    top: 72%;
+  }
+
+
+  img#portrait_down {
+    touch-action: none;
+    height: 15%;
+  }
+
+
+  img#portrait_left {
+    touch-action: none;
+    width: 15.5%;
+    height: 15%;
+    top: 72%;
+    left: 4%;
+  }
+
+  div#portrait_controls {
+    touch-action: none;
+    width: 0;
+    height: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  img#portrait_select {
+    touch-action: none;
+    height:7%;
+    width:12%;
+    left: 62%;
+  }
+
+
+  img#portrait_start {
+    touch-action: none;
+    height:7%;
+    width:12%;
+    left: 79%;
+  }
+
+  img#portrait_B {
+    touch-action: none;
+    height:15%;
+    width:14%;
+    left: 61%;
+    top: 62%;
+  }
+
+  img#portrait_A {
+    touch-action: none;
+    height:15%; 
+    width:14%;
+    top: 65%;
+    left: 78%;
+  } 
+
+  canvas#screen {
+    touch-action: none;
+    min-height: 50%;
+    max-height: 100%;
+  }
+
+}

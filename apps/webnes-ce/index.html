@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html manifest="webnes.appcache">
+    <head>
+        <meta charset="utf-8">
+        <title>webNES CE</title>
+        <meta name="description" content="An NES emulator for everyone">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-1024.png">
+        <link href="images/apple-touch-startup-image-640x1096.png"
+              media="(device-width: 320px) and (device-height: 568px)
+                 and (-webkit-device-pixel-ratio: 2)"
+              rel="apple-touch-startup-image">
+         <link href="images/apple-touch-startup-image-640x920.png"
+              media="(device-width: 320px) and (device-height: 480px)
+                 and (-webkit-device-pixel-ratio: 2)"
+              rel="apple-touch-startup-image">
+        <link href="images/apple-touch-startup-image-320x460.png"
+              media="(device-width: 320px) and (device-height: 480px)
+                 and (-webkit-device-pixel-ratio: 1)"
+              rel="apple-touch-startup-image">
+        <link href="images/apple-touch-startup-image-768x1004.png" 
+              media="(device-width: 768px) 
+                and (orientation: portrait)" 
+              rel="apple-touch-startup-image">
+        <link href="images/apple-touch-startup-image-748x1024.png" 
+              media="(device-width: 768px) 
+                and (orientation: landscape)" 
+              rel="apple-touch-startup-image">
+        <link href="images/apple-touch-startup-image-1536x2008.png" 
+              media="(device-width: 1536px) and (orientation: portrait) 
+                and (-webkit-device-pixel-ratio: 2)"
+              rel="apple-touch-startup-image">
+        <link href="images/apple-touch-startup-image-2048x1496.png" 
+              media="(device-width: 1536px)  and (orientation: landscape) 
+                and (-webkit-device-pixel-ratio: 2)" 
+              rel="apple-touch-startup-image">
+      
+        <link rel="stylesheet" href="css/main.css">
+        <script>var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-43172430-2"]);_gaq.push(["_trackPageview"]);(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+    </head>
+    <body>
+        <div id="desktopLanding">
+          <img src="images/logo.png" alt="webNES" id="webNESLogo">
+          <p>Is an NES emulator.</p>
+          <p>But it's only available for <i>mobile</i> devices</p>
+          <img src="images/noDesktop.png" alt="webNES" id="noDesktop"></img>
+          <br><br>
+          <p style="">The original <a href="https://github.com/conradev/webn.es">webNES</a> was built at PennApps Spring 2014 by <a href="https://github.com/conradev">@conradev</a>, <a href="https://github.com/jawerty">@jawerty</a>, <a href="https://github.com/bogidon">@bogidon</a> and <a href="https://github.com/elklein96">@elklein96</a></p>
+          <br>
+          <p><a href="https://github.com/HTV04/htv04.github.io/tree/master/webnes-ce"><i class="fa fa-github fa-3x"></i></a></p>
+          <br>
+          <p style="color:#505050">webNES CE is built off of <a href="https://jsnes.org">JSNES</a> made by <a href="https://fir.sh">@bfirsh</a>. If you're on a desktop device, use this instead!</p>
+        </div>
+        <div id="play">
+            <canvas id="screen" width="256" height="240" style="image-rendering: optimizeSpeed; image-rendering: -moz-crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: -o-crisp-edges; image-rendering: pixelated; -ms-interpolation-mode: nearest-neighbor; "></canvas>
+            <div id="portrait_controls">
+                <div id="buttons">
+                    <div id="arrow_keys">
+                        <img src="images/up_arrow.png" height=14% width=15% id="portrait_up" oncontextmenu="return false;">
+                        </img>
+                        
+                        <img src="images/right_arrow.png" width=19.5% height=11% id="portrait_right" oncontextmenu="return false;">
+                        </img>
+                        
+                        <img src="images/down_arrow.png" height=14% width=15% id="portrait_down" oncontextmenu="return false;">
+                        </img>
+
+                        <img src="images/left_arrow.png" width=19.5% height=11% id="portrait_left" oncontextmenu="return false;">
+                        </img>
+                    </div>
+
+                    <div id="portrait_settings_keys">
+                        <img id="portrait_select" height=7% width=20% src="images/select_button.png" oncontextmenu="return false;">
+                        </img>
+
+                        <img id="portrait_start" height=7% width=20% src="images/start_button.png" oncontextmenu="return false;">
+                        </img>
+                    </div>
+                    
+                    <div id="portrait_action_keys">
+                        <img id="portrait_B" height=15% width= 20% src="images/b_button.png" oncontextmenu="return false;">
+    
+                        </img>
+
+                        <img id="portrait_A" height=15% width= 20% src="images/a_button.png" oncontextmenu="return false;">
+                        </img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="home">
+            <div id="header">
+                <img src="images/logo.png" alt="webNES">
+                <div id="addROM">
+                    <img class="btnAddROM" src="images/plus.png">
+                </div>
+            </div>
+            <div id="scroll">
+                <ul></ul>
+            </div>
+        </div>
+        <script
+               src="https://code.jquery.com/jquery-3.4.1.min.js"
+               integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+               crossorigin="anonymous">
+        </script>
+        <script src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="l23c21k461vr1f2"></script>
+        <script src="https://unpkg.com/jsnes/dist/jsnes.min.js"></script>
+        <script src="js/userAgents.js"></script>
+        <script src="js/webnes.js"></script>
+    </body>
+</html>
