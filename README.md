@@ -17,7 +17,7 @@ Meme!
 * [Steam](https://steamcommunity.com/id/htv04/)
 * [YouTube](https://www.youtube.com/channel/UCF1lnrLYXDYWOc4y3W8-lPg)
 * [Reddit](https://www.reddit.com/user/HTV04/)
-* [Twitter](https://twitter.com/HTV04_) (I don't post anything lol)
+* [Twitter](https://twitter.com/HTV04_)
 * [Spotify](https://open.spotify.com/user/htv04)
 
 You might also find me in other places that I'm too lazy to list.
