@@ -31,7 +31,7 @@ all: root pages
 # Pages
 pages: root/images root/index.html
 root/%.html: src/pages/%.md root
-	pandoc $< -f markdown -s -t html -o $@
+	pandoc $< -f markdown --wrap=none -t html -s -o $@
 root/images: root
 	cp -r src/pages/images root/images
 
