@@ -36,7 +36,7 @@ rusty_???: A WIP ??? ??? written in Rust. Mainly written to help me learn Rust, 
 I've worked on other things too, but I'm only posting the most notable ones here. Check out my [GitHub](https://github.com/HTV04) for more!
 
 ## Socials.
-[X](https://twitter.com/HTV04_) | [YouTube](https://www.youtube.com/channel/UCF1lnrLYXDYWOc4y3W8-lPg) | [Mastodon](https://mastodon.gamedev.place/@HTV04) | [Bluesky](https://bsky.app/profile/htv04.bsky.social)
+[X](https://twitter.com/HTV04_) | [YouTube](https://www.youtube.com/channel/UCF1lnrLYXDYWOc4y3W8-lPg) | <a rel="me" href="https://mastodon.gamedev.place/@HTV04">Mastodon</a> | [Bluesky](https://bsky.app/profile/htv04.bsky.social)
 
 Anything not listed here... Might be me, but also might not be me. Be cautious, and don't hesitate to ask.
 
