@@ -1,6 +1,6 @@
 ---
-pagetitle: HTV04's Website
-title-meta: HTV04's Website
+pagetitle: htv04.com
+title-meta: htv04.com
 author-meta: HTV04
 date-meta: February 18, 2024
 document-css: false
@@ -8,7 +8,7 @@ header-includes:
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 ---
 
-# [HTV04's Website](https://htv04.com).
+# [htv04.com](https://htv04.com).
 Welcome. Things are a little WIP around these parts, but everything great starts off somewhere, right?
 
 ...CSS? What's that?
