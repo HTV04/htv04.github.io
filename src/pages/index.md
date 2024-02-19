@@ -4,6 +4,8 @@ title-meta: HTV04's Website
 author-meta: HTV04
 date-meta: February 18, 2024
 document-css: false
+header-includes:
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 ---
 
 # [HTV04's Website](https://htv04.com).

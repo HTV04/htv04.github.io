@@ -1,10 +1,20 @@
-all: root/index.html
+.PHONY: all pages run clean
 
-docs/index.html: root/index/index.md
+all: root pages
+
+pages: root/index.html root/images
+
+root/%.html: src/pages/%.md root
 	pandoc $< -f markdown -s -t html -o $@
+
+root/images: root
+	cp -r src/pages/images root/images
+
+root:
+	mkdir root
 
 run:
 	python3 -m http.server -d root
 
 clean:
-	rm -f root/index.html
+	rm -rf root
