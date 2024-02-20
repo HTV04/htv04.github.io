@@ -1,5 +1,4 @@
 ---
-pagetitle: htv04.com
 title: HTV04's Website
 author-meta: HTV04
 date-meta: February 20, 2024
