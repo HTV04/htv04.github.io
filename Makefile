@@ -29,9 +29,9 @@
 all: root images pages
 
 # Pages
-pages: images root/favicon.ico root/index.html
+pages: images root/favicon.ico root/index.html root/projects.html
 root/%.html: src/pages/%.md root
-	pandoc $< -f markdown --wrap=none --template=src/pages/template.html -t html -o $@
+	pandoc $< -f markdown-smart --strip-comments=true --wrap=none --template=src/pages/template.html -t html -o $@
 root/favicon.ico: src/pages/favicon.ico root
 	cp $< $@
 

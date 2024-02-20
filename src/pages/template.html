@@ -34,29 +34,38 @@ $endif$
 	<link rel="shortcut icon" href="/favicon.ico">
 	<!-- TODO -->
 	<style>
-	body {
-		background-color: mediumslateblue;
-		font-family: sans-serif;
-		color: beige;
-	}
-	@media screen and (orientation: landscape) {
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap');
 		body {
-			padding-left: 12.5%;
-			padding-right: 12.5%;
+			background-color: mediumslateblue;
+			font-family: "Open Sans", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 500;
+			font-style: normal;
+			font-variation-settings:
+				"wdth" 100;
+			color: beige;
 		}
-	}
-	@media screen and (orientation: portrait) {
-		body {
-			padding-left: 6.25%;
-			padding-right: 6.25%;
+		@media screen and (orientation: landscape) {
+			body {
+				padding-left: 12.5%;
+				padding-right: 12.5%;
+			}
 		}
-	}
-	body a {
-		color: orange;
-	}
-	body a:visited {
-		color: peru;
-	}
+		@media screen and (orientation: portrait) {
+			body {
+				padding-left: 6.25%;
+				padding-right: 6.25%;
+			}
+		}
+		body a {
+			color: orange;
+		}
+		body a:visited {
+			color: peru;
+		}
+		body hr {
+			color: plum
+		}
 	</style>
 $for(css)$
 	<link rel="stylesheet" href="$css$" />
@@ -76,10 +85,11 @@ $endif$
 </head>
 <body>
 <span style="text-align:center">
-<img src="/favicon.ico" title="HTV04's Website" alt="HTV04's Website">
 <nav>
 <span style="background-color:slateblue;padding:5px">
-<a href="/">Home</a>
+HTV04's Website |
+<a href="/">Home</a> |
+<a href="/projects.html">Projects</a>
 </span>
 </nav>
 </span>
@@ -117,9 +127,13 @@ $endif$
 $table-of-contents$
 </nav>
 $endif$
+<article>
 $body$
+</article>
 $for(include-after)$
 $include-after$
 $endfor$
+<hr>
+<img src="/favicon.ico" title="HTV04's Website" alt="HTV04's Website">
 </body>
 </html>
