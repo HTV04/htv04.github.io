@@ -1,17 +1,12 @@
 ---
 pagetitle: htv04.com
-title-meta: htv04.com
+title: HTV04's Website
 author-meta: HTV04
-date-meta: February 18, 2024
-document-css: false
-header-includes:
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+date-meta: February 20, 2024
 ---
 
-# [htv04.com](https://htv04.com).
-Welcome. Things are a little WIP around these parts, but everything great starts off somewhere, right?
-
-...CSS? What's that?
+## Welcome.
+Things are a little WIP around these parts, but everything great starts off somewhere, right?
 
 ## Me.
 My name is Harrison. I'm currently 19 years old, and I live in the United States. I have many hobbies, but my favorite by far is software development. Why? Honestly, I'm not too sure. I just really like working on software. The best way I can describe it is that it's like solving a complicated puzzle, but the result is something way more rewarding than a picture.
@@ -23,17 +18,22 @@ Finally, I'm a huge Linux and OSS enthusiast. Wherever I can, I run Linux (i use
 ...In other words, I'm a huge nerd. LOL
 
 ## Projects.
+
 [Friday Night Funkin' Rewritten](https://github.com/HTV04/funkin-rewritten): Optimized rewrite of Friday Night Funkin' built on LÖVE. Runs on the Nintendo Switch! Haven't worked on it in some time, though. You might want to check out [Vanilla Engine](https://github.com/VanillaEngineDevs/Vanilla-Engine), which is based on this project.
 
 [WiiLÖVE](https://github.com/HTV04/wiilove): A proof-of-concept Lua-based game engine for the Wii, based on the API of [LÖVE](https://love2d.org/).
 
-rusty_???: A WIP ??? ??? written in Rust. Mainly written to help me learn Rust, but turned out to be a pretty interesting project.
-
-???: Explore the ??? as ??? from ???, based on ???. My first real web project!
-
 [htv04.github.io](https://github.com/HTV04/htv04.github.io): This website!
 
 I've worked on other things too, but I'm only posting the most notable ones here. Check out my [GitHub](https://github.com/HTV04) for more!
+
+### Upcoming
+
+NOTE: Names and info will be redacted until release, but try to figure them out ;)
+
+rusty_???: A WIP ??? ??? written in Rust. Mainly written to help me learn Rust, but turned out to be a pretty interesting project.
+
+???: Explore the ??? as ??? from ???, based on ???. My first real web project!
 
 ## Socials.
 [X](https://twitter.com/HTV04_) | [YouTube](https://www.youtube.com/channel/UCF1lnrLYXDYWOc4y3W8-lPg) | <a rel="me" href="https://mastodon.gamedev.place/@HTV04">Mastodon</a> | [Bluesky](https://bsky.app/profile/htv04.bsky.social)

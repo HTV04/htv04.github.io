@@ -29,11 +29,11 @@
 all: root pages
 
 # Pages
-pages: root/images root/index.html
+pages: root/favicon.ico root/index.html
 root/%.html: src/pages/%.md root
-	pandoc $< -f markdown --wrap=none -t html -s -o $@
-root/images: root
-	cp -r src/pages/images root/images
+	pandoc $< -f markdown --wrap=none --template=src/pages/template.html -t html -o $@
+root/favicon.ico: src/pages/favicon.ico root
+	cp $< $@
 
 # Website root
 root:
