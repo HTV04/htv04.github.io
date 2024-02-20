@@ -23,17 +23,22 @@
 # htv04.github.io Makefile
 
 # Phony targets
-.PHONY: all pages run clean
+.PHONY: all pages images run clean
 
 # Full website (default)
-all: root pages
+all: root images pages
 
 # Pages
-pages: root/favicon.ico root/index.html
+pages: images root/favicon.ico root/index.html
 root/%.html: src/pages/%.md root
 	pandoc $< -f markdown --wrap=none --template=src/pages/template.html -t html -o $@
 root/favicon.ico: src/pages/favicon.ico root
 	cp $< $@
+
+# Images
+images: root/images
+root/images: src/pages/images root
+	cp -r $< $@
 
 # Website root
 root:

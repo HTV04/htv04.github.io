@@ -2,25 +2,38 @@
 <!-- htv04.com: $title$ -->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+	<meta charset="utf-8" />
+	<meta name="generator" content="pandoc" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://htv04.com/" />
+	<meta property="og:image" content="https://htv04.com/images/banner.png" />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://htv04.com/" />
+	<meta property="twitter:image" content="https://htv04.com/images/banner.png" />
+$if(title-prefix)$
+	<meta name="title" content="$title-meta$" />
+	<meta property="og:title" content="$title-meta$" />
+	<meta property="twitter:title" content="$title-meta$" />
+$endif$
 $for(author-meta)$
-  <meta name="author" content="$author-meta$" />
+	<meta name="author" content="$author-meta$" />
 $endfor$
 $if(date-meta)$
-  <meta name="dcterms.date" content="$date-meta$" />
+	<meta name="dcterms.date" content="$date-meta$" />
 $endif$
 $if(keywords)$
-  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+	<meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
 $endif$
 $if(description-meta)$
-  <meta name="description" content="$description-meta$" />
+	<meta name="description" content="$description-meta$" />
+	<meta property="og:description" content="$description-meta$" />
+	<meta property="twitter:description" content="$description-meta$" />
 $endif$
-  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-  <link rel="shortcut icon" href="/favicon.ico">
-  <!-- TODO -->
-  <style>
+	<title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<!-- TODO -->
+	<style>
 	body {
 		background-color: mediumslateblue;
 		font-family: sans-serif;
@@ -44,22 +57,22 @@ $endif$
 	body a:visited {
 		color: peru;
 	}
-  </style>
+	</style>
 $for(css)$
-  <link rel="stylesheet" href="$css$" />
+	<link rel="stylesheet" href="$css$" />
 $endfor$
 $for(header-includes)$
   $header-includes$
 $endfor$
 $if(math)$
 $if(mathjax)$
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 $endif$
   $math$
 $endif$
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+	<!--[if lt IE 9]>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 <span style="text-align:center">
