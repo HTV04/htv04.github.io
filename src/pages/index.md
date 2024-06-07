@@ -1,28 +1,26 @@
 ---
 title: HTV04's Website
 author-meta: HTV04
-date-meta: May 20, 2024
-description-meta: Fire in the hole!
+date-meta: June 5, 2024
 ---
 
-## Welcome.
-Things are a little WIP around these parts, but everything great starts off somewhere, right?
+## Me
+My name is Harrison. I am currently 20 years old and reside in the United States. Among my various hobbies, my foremost passion is software development. I liken it to solving a complex puzzle, where the outcome is far more gratifying than a picture.
 
-## Me.
-My name is Harrison. I'm currently 20 years old, and I live in the United States. I have many hobbies, but my favorite by far is software development. Why? Honestly, I'm not too sure. I just really like working on software. The best way I can describe it is that it's like solving a complicated puzzle, but the result is something way more rewarding than a picture.
+I also possess a talent for reverse engineering and ethical hacking. I am particularly interested in exploring the inner workings of some of my favorite projects or hardware and incorporating my own modifications. This has also enabled me to write more efficient code in my own projects, as it deepens my understanding of system architecture and performance optimization.
 
-I also have a knack for reverse engineering and "hacking." I'm not a l33t haxx0r or anything, but I do have an interest in checking out the internals of some of my favorite projects or hardware, and incorporating my own stuff into them.
+Additionally, I am an avid Linux and open-source software enthusiast. I ensure that nearly all the software I develop is compatible with Linux and occasionally assist in porting software to the platform. I strive to open-source all my personal projects to aid other developers in learning from my work and to maintain transparency in my programs' functions.
 
-Finally, I'm a huge Linux and OSS enthusiast. Wherever I can, I run Linux (i use arch linux btw). I also make sure all the software I develop can run on Linux, and occasionally help port software over to Linux. I'm actually in a Linux user group at my university. My goal in that group is to help people learn more about Linux and consider using it as their main OS.
+At my university, I am deeply involved in several technology-focused clubs and organizations. My experience in these organizations has been an excellent opportunity to sharpen my skills and collaborate with like-minded peers.
 
-...In other words, I'm a huge nerd. LOL
+## Projects
+[Friday Night Funkin' Rewritten](https://github.com/HTV04/funkin-rewritten): Optimized rewrite of Friday Night Funkin' built on LÖVE. Runs on the Nintendo Switch (via homebrew).
 
-## Socials.
-[X](https://twitter.com/HTV04_) | <a rel="me" href="https://mastodon.gamedev.place/@HTV04">Mastodon</a> | [YouTube](https://www.youtube.com/channel/UCF1lnrLYXDYWOc4y3W8-lPg)
+[WiiLÖVE](https://github.com/HTV04/wiilove): A proof-of-concept Lua-based game engine for the Wii, based on the API of [LÖVE](https://love2d.org/).
 
-Anything not listed here... Might be me, but also might not be me. Be cautious, and don't hesitate to ask.
+[htv04.github.io](https://github.com/HTV04/htv04.github.io): This website!
 
-You can also reach out to me at [contact@htv04.com](mailto:contact@htv04.com).
+I have worked on other projects too, but I am only posting the most notable ones here. Check out my [GitHub](https://github.com/HTV04) for more.
 
-## The End.
-The end.
+## Socials
+My main socials are on [X](https://x.com/HTV04_) and <a rel="me" href="https://mastodon.gamedev.place/@HTV04">Mastodon</a>. You can also reach out to me at [contact@htv04.com](mailto:contact@htv04.com).

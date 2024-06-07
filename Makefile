@@ -23,29 +23,22 @@
 # htv04.github.io Makefile
 
 # Phony targets
-.PHONY: all pages images run clean
+.PHONY: all pages run clean
 
 # Full website (default)
-all: root images pages
+all: pages
 
 # Pages
-pages: images root/favicon.ico root/index.html root/projects.html
-root/%.html: src/pages/%.md root
+pages: root/index.html
+	mkdir -p root
+	cp -r src/pages/favicon.ico src/pages/fonts src/pages/images root
+root/%.html: src/pages/%.md
+	mkdir -p $(dir $@)
 	pandoc $< -f markdown-smart --strip-comments=true --wrap=none --template=src/pages/template.html -t html -o $@
-root/favicon.ico: src/pages/favicon.ico root
-	cp $< $@
-
-# Images
-images: root/images
-root/images: src/pages/images root
-	cp -r $< $@
-
-# Website root
-root:
-	mkdir root
 
 # Run website via Python
-run: root
+run:
+	mkdir -p root
 	python3 -m http.server -d root
 
 # Clean
